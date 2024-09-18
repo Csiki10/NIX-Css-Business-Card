@@ -1,0 +1,206 @@
+$header-bg-color: #0f84d3;
+$card-bg-color: white;
+$card-hover-bg-color: rgb(245, 245, 245);
+$primary-text-color: white;
+$secondary-text-colo: rgb(0, 0, 0);
+$box-shadow-color: rgba(149, 157, 165, 0.2);
+
+body {
+  font-family: "Rubik", Roboto, sans-serif;
+  background-color: #f1f1f1;
+}
+
+header {
+  padding: 1.5em;
+  background-color: $header-bg-color;
+  text-align: center;
+
+  h1 {
+    color: $primary-text-color;
+    font-size: 3em;
+  }
+}
+
+main {
+  min-height: 100vh;
+  padding: 3em 0;
+  max-width: 992px;
+  margin: auto;
+}
+
+.profile {
+  .image {
+    padding: 0 2em;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+
+  .profile-info {
+    text-align: center;
+    position: relative;
+    top: -70px;
+    background-color: $card-bg-color;
+    border-radius: 20px;
+    width: 70%;
+    margin: auto;
+    padding: 2em;
+    color: $secondary-text-colo;
+    text-align: center;
+    box-shadow: $box-shadow-color 0px 8px 24px;
+
+    .name {
+      font-size: 4em;
+      font-weight: 800;
+      margin: 0.5em 0;
+    }
+
+    .specialisation,
+    .company {
+      font-size: 2em;
+      font-weight: 500;
+      padding: 0.5em 0;
+    }
+
+    .company {
+      font-style: italic;
+    }
+  }
+
+  .about {
+    padding: 2em;
+    margin: 0 2em;
+    border-radius: 20px;
+    background-color: $card-bg-color;
+    box-shadow: $box-shadow-color 0px 8px 24px;
+
+    h3 {
+      font-weight: 700;
+      font-size: larger;
+      text-align: center;
+      padding: 0.5em 0;
+    }
+
+    hr {
+      width: 80%;
+      margin: auto;
+      margin: 1.5em auto;
+    }
+
+    .bio,
+    .contact-info {
+      margin: 2em;
+      text-align: center;
+    }
+
+    p:nth-child(1) {
+      margin-bottom: 1.5em;
+    }
+  }
+}
+
+.social-media {
+  ul {
+    padding: 0em 2em;
+
+    li {
+      list-style-type: none;
+      padding: 1em 1em;
+      margin: 1em 0;
+      border-radius: 20px;
+      background-color: $card-bg-color;
+      box-shadow: $box-shadow-color 0px 8px 24px;
+
+      a {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        text-decoration: none;
+        color: $secondary-text-colo;
+        font-weight: 500;
+        font-size: 3em;
+      }
+    }
+
+    li:hover {
+      background-color: $card-hover-bg-color;
+    }
+
+    li:nth-child(1) {
+      margin-top: 0;
+    }
+
+    img {
+      margin-right: 1em;
+      height: auto;
+      max-width: 100px;
+    }
+  }
+}
+
+.skill-images {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 2em;
+  padding: 2em;
+  margin: 0 2em;
+  border-radius: 20px;
+  background-color: $card-bg-color;
+  box-shadow: $box-shadow-color 0px 8px 24px;
+
+  img {
+    text-align: center;
+    height: auto;
+    max-width: 150px;
+  }
+}
+
+.skills,
+.social-media {
+  h3 {
+    color: $secondary-text-colo;
+    padding: 2em;
+    font-weight: 700;
+    font-size: larger;
+  }
+}
+
+footer {
+  background-color: $header-bg-color;
+  text-align: center;
+  padding: 2em;
+
+  p {
+    font-size: 1em;
+    color: $primary-text-color;
+  }
+}
+
+// @media (min-width: 768px) {
+//   .profile {
+//     display: flex;
+//     padding: 0 2em;
+
+//     .image {
+//       padding: 0 2em 0 0;
+//     }
+
+//     .profile-info {
+//       top: 0;
+//       margin: 0;
+//       width: unset;
+//       border-radius: 20px 20px 0 0;
+//       box-shadow: unset;
+//     }
+
+//     .about {
+//       margin: 0;
+//       border-radius: 0 0 20px 20px;
+//       box-shadow: unset;
+//     }
+//   }
+// }
