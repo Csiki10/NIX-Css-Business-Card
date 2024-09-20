@@ -33,24 +33,23 @@ main {
 .profile .profile-info {
   text-align: center;
   position: relative;
-  top: -70px;
+  top: -50px;
   background-color: white;
   border-radius: 20px;
-  width: 70%;
+  width: 60%;
   margin: auto;
-  padding: 2em;
+  padding: 1em;
   color: rgb(0, 0, 0);
   text-align: center;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .profile .profile-info .name {
-  font-size: 4em;
-  font-weight: 800;
+  font-size: 2em;
+  font-weight: 700;
   margin: 0.5em 0;
 }
-.profile .profile-info .specialisation,
-.profile .profile-info .company {
-  font-size: 2em;
+.profile .profile-info h3 {
+  font-size: 1em;
   font-weight: 500;
   padding: 0.5em 0;
 }
@@ -66,6 +65,7 @@ main {
 }
 .profile .about h3 {
   font-weight: 700;
+  font-size: 1em;
   font-size: larger;
   text-align: center;
   padding: 0.5em 0;
@@ -86,48 +86,50 @@ main {
 
 .social-media ul {
   padding: 0em 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1em;
 }
 .social-media ul li {
   list-style-type: none;
   padding: 1em 1em;
-  margin: 1em 0;
   border-radius: 20px;
   background-color: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  flex-grow: 1;
 }
 .social-media ul li a {
   display: flex;
-  justify-content: start;
   align-items: center;
   text-decoration: none;
   color: rgb(0, 0, 0);
-  font-weight: 500;
-  font-size: 3em;
+  font-size: 1.5em;
+}
+.social-media ul li a img {
+  margin-right: 1em;
+  height: auto;
+  max-width: 50px;
 }
 .social-media ul li:hover {
   background-color: rgb(245, 245, 245);
 }
-.social-media ul li:nth-child(1) {
-  margin-top: 0;
-}
-.social-media ul img {
-  margin-right: 1em;
-  height: auto;
-  max-width: 100px;
-}
 
 .skill-images {
   display: flex;
-  justify-content: space-around;
-  padding: 0 2em;
-  padding: 2em;
+  flex-grow: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0.5em;
   margin: 0 2em;
   border-radius: 20px;
   background-color: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .skill-images img {
-  text-align: center;
+  margin: 1em;
   height: auto;
   max-width: 150px;
 }
@@ -135,7 +137,7 @@ main {
 .skills h3,
 .social-media h3 {
   color: rgb(0, 0, 0);
-  padding: 2em;
+  padding: 2em 2em 1.5em 2em;
   font-weight: 700;
   font-size: larger;
 }
@@ -148,4 +150,26 @@ footer {
 footer p {
   font-size: 1em;
   color: white;
+}
+
+@media (min-width: 768px) {
+  .profile {
+    display: flex;
+    padding: 0 2em;
+  }
+  .profile .image {
+    padding: 0 2em 0 0;
+  }
+  .profile .profile-info {
+    top: 0;
+    margin: 0;
+    width: unset;
+    border-radius: 20px 20px 0 0;
+    box-shadow: unset;
+  }
+  .profile .about {
+    margin: 0;
+    border-radius: 0 0 20px 20px;
+    box-shadow: unset;
+  }
 }/*# sourceMappingURL=style.css.map */
